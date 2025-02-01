@@ -1,0 +1,43 @@
+<h1>jugadores</h1>
+
+<div>
+  
+  <dl>
+    <div>
+      <td>Nombre:</td>
+      <dd>{{ nombre }}</dd>
+    </div>
+
+    <div>
+      <td>Edad:</td>
+      <dd>{{ edad }}</dd>
+    </div>
+    <div>
+      <td>Club:</td>
+      <dd>{{ club }}</dd>
+    </div>
+
+    <div>
+      <td>Metodo:</td>
+      <dd>{{ getConcatPlayer() }}</dd>
+    </div>
+
+    <div>
+      <td>Nombre Capitalizable:</td>
+      <dd>{{capitalizedname}}</dd>
+    </div>
+  </dl>
+</div>
+
+<div>
+  <button *ngIf=" nombre !== 'Juan Fernando Quintero'" class="btn btn-primary mx-2" (click)="changePlayer()">
+    Cambiar nombre
+  </button>
+  <button *ngIf="edad !== 32" class="btn btn-primary mx-2" (click)="changeAge()">
+    Cambiar Edad
+  </button>
+  <button class="btn btn-primary mx-2" (click)="changeClub()">
+    Cambiar Club
+  </button>
+  <button class="btn btn-primary mx-2" (click)="resetForm()"> Reset</button>
+</div>
