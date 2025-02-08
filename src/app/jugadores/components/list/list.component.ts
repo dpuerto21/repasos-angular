@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { jugador } from '../../interfaces/jugador.interface';
 import { from } from 'rxjs';
 
@@ -13,8 +13,10 @@ export class ListComponent {
   @Input()
   public listPlayers: jugador[] = [];
 
-  onDeletedPlayer(index: number) {
-    const Delete = this.listPlayers.splice(index, 1 );
-    console.log(Delete);
+  @Output()
+  public onDeletedPlayer = new EventEmitter<number>();
+
+  onDeletedPlayerI(index: number) {
+    this.onDeletedPlayer.emit(index);
   }
 }

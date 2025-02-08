@@ -58,4 +58,8 @@ export class MainPageComponent {
   onNewPlayer(player: jugador): void {
     this.jugadores.push(player);
   }
+  onDeletedPlayer(index: number) {
+    const Delete = this.jugadores.splice(index, 1);
+    console.log(Delete);
+  }
 }
