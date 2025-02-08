@@ -1,6 +1,6 @@
 {
-    "oneDarkPro.editorTheme": "Tokyo",
-    "workbench.colorTheme": "Tokyo Night",
-    "editor.fontSize": 15,
-    "editor.fontFamily": "Cascadia Code  PL ,Courier New, monospace"
+  "oneDarkPro.editorTheme": "Tokyo",
+  "workbench.colorTheme": "Aura Soft Dark (Soft Text)",
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Cascadia Code  PL ,Courier New, monospace"
 }

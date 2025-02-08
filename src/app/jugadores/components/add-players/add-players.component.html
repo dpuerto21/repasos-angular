@@ -1,0 +1,14 @@
+<div>
+  <h2> Ingrese un jugador</h2>
+  <form action="" class="row" id="frm" name="formulario" (ngSubmit)="addPlayer()">
+    <input class="form-control my-2" type="text" placeholder="name" id="name" name="player_name"
+      [(ngModel)]="formPlayer.name">
+    <input class="form-control" type="number" placeholder="Price" id="Price" name="player_Price"
+      [(ngModel)]="formPlayer.price">
+
+    <button class="btn btn-outline-primary my-2 " type="submit"> Add Player</button>
+
+    <span> {{formPlayer.name |json}}</span>
+    <span> {{formPlayer.price | json}}</span>
+  </form>
+</div>

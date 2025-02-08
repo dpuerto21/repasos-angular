@@ -1,0 +1,17 @@
+<ul class="list-group   ">
+  <li class="list-group-item d-flex justify-content-between"
+    [ngClass]="{  'list-group-item-info' : isFirst , 'list-group-item-primary': iseven, 'list-group-item-warning':isLast, 'list-group-item-success':isodd}"
+    *ngFor="let player of listPlayers ; let i = index let isFirst = first let isLast = last let iseven = even let isodd = odd">
+    <div>
+      <strong class="text-primary"> {{i + 1}} - </strong>
+      <span>{{player.name}}</span>
+      <strong> Price : </strong>
+      <span>$ {{player.price}} </span>
+    </div>
+    <div>
+
+      <button class="btn btn-outline-dark" type="submit" (click)="onDeletedPlayer(i )"> Delete</button>
+    </div>
+
+  </li>
+</ul>

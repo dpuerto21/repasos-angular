@@ -1,17 +1,18 @@
-
 <h3 *ngIf="!playerEliminate;else eliminado" class="alert alert-danger"> No ah borrado ningun jugador</h3>
-<ng-template  #eliminado>
-<h3 > El jugador eliminado es  <small  class="text-danger"> {{playerEliminate}}</small></h3>
+<ng-template #eliminado>
+  <h3> El jugador eliminado es <small class="text-danger"> {{playerEliminate}}</small></h3>
 </ng-template>
 
 <div class="container">
 
   <ul class="list-group mt-2">
-    <li class="list-group-item" *ngFor="let jugador of jugadores " > {{jugador}}
-    </ul>
+    <li class="list-group-item" *ngFor="let jugador of jugadores "> {{jugador}}
+  </ul>
 
 
 
-    <button (click)="getLastPlayer()" class="btn btn-outline-danger my-2"> Eliminar jugador</button>
-  </div>
+  <button (click)="getLastPlayer()" class="btn btn-outline-danger my-2"> Eliminar jugador</button>
+</div>
 
+
+1
